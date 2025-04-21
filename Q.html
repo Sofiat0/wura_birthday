@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday AJALA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffb6c1, #dda0dd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card-container {
+            perspective: 1500px;
+        }
+
+        .card {
+            width: 750px;
+            height: 520px;
+            background-color: #fff0f5;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .card.open {
+            transform: rotateY(180deg);
+        }
+
+        .card .front,
+        .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .card .front {
+            background: linear-gradient(to bottom right, #ffc0cb, #e6add8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .card .front video {
+            width: 90%;
+            max-height: 60%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 3px solid white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        }
+
+        .card .front h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 6px #8b008b;
+            text-align: center;
+        }
+
+        .card .front p {
+            font-size: 1em;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .card .back {
+            background: #fff0f5;
+            transform: rotateY(180deg);
+            padding: 40px;
+            overflow-y: auto;
+            color: #4b0082;
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+
+        .flowers {
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .card.open .flowers {
+            opacity: 1;
+        }
+
+        .flower {
+            width: 70px;
+            height: 70px;
+            background-size: cover;
+            animation: float 4s infinite ease-in-out;
+        }
+        .colorful-text {
+  background: linear-gradient(to right, #ff69b4, #da70d6); /* pink to purple */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+        .flower:nth-child(1) {
+            background-image: url('https://i.imgur.com/5Z6WQvJ.png');
+        }
+
+        .flower:nth-child(2) {
+            background-image: url('https://i.imgur.com/QS9eXYh.png');
+        }
+
+        .flower:nth-child(3) {
+            background-image: url('https://i.imgur.com/rG9ZcLz.png');
+        }
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card" onclick="this.classList.toggle('open')">
+            <div class="flowers">
+                <div class="flower"></div>
+                <div class="flower"></div>
+                <div class="flower"></div>
+            </div>
+            <div class="front">
+                <video width="800" height="560" controls>
+                    <source src="video/birth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h1>💖 Happy Birthday AJOKE 💖</h1>
+                 <STRong class="colorful-text">WATCH THE VIDEO FINISH</STRong>
+                <strong>CLICK TO OPEN</strong>
+            </div>
+
+            <div class="back">
+                <p><STrong>Happy birthday AJOKE 😂</STrong>,<br><br>
+                    Long life and prosperity, many more years to come.<br><br>
+                    Fr I don’t know where to start or how to wish you.<br><br>
+                    Who would have thought right? Our friendship feels like one of those epic travel stories you can’t
+                    believe actually happened. Lol 😂 maybe not that exact memory, but you get the idea. Our meeting was
+                    so random, so off the beaten path, it’s almost unbelievable how close we’ve become.<br><br>
+                    I know if not for that one person, we wouldn’t have met. Maybe we would have, but I don’t think we
+                    would be close friends.<br><br>
+                    When I was coming to this school, I thought I’d be on my own, not talking to anyone — but that
+                    changed.<br><br>
+                    You are actually everything someone would look for in a friend.<br><br>
+                    I’m so grateful for our unexpected bond. I cherish every moment we’ve shared, just talking and
+                    laughing. You’ve brought so much joy, laughter, and love into my life.<br><br>
+                    Through all the ups and downs, you’ve been a great friend to me. You’re the kind of friend who just
+                    gets me, even when I’m being a total weirdo. You challenge me to step outside my comfort zone.
+                    You’re one of the most genuine, kind-hearted, and hilarious people I know.<br><br>
+                    Thank you for staying with me, regardless of how crazy I act sometimes.<br><br>
+                    I’ll always remind you — you’re beautiful the way you are:<br>
+                    "Especially your smile; it was the light that lit up every room you walked into.
+                    The way you smile,<br>
+                    The way you talk,<br>
+                    Everything about you is just perfect.<br><br>
+                    Sometimes looking at you, I think, “This girl is senseless,” and yeah, you kinda are 😂… but in the
+                    best way. obsessed mf of lipgloss<br><br>
+                    You have this uncanny ability to understand me, even when I’m not making any sense.  <BR></BR>
+                    And if you ever need me  — I’ll always be there for you."
+<BR></BR>
+"Anytime you need me, for anything at all, I’ll be right here."
+<BR></BR>
+"Whenever you need someone — I’ll be there, no questions asked."
+<BR></BR>
+"I’m just one call, one message, or one thought away. I’ll always be there."
+<BR></BR>
+"You can count on me — always, no matter what, no matter when."<br><br>
+                    So here’s to another year of laughter, adventure, and maybe a little delightful chaos. May your
+                    birthday be filled with everything that makes you happy, and may the year ahead be even more amazing
+                    than the last.<br><br>
+                    May your birthday be filled with everything that brings you joy, 
+                    from the smallest pleasures to the grandest celebrations, and may the year ahead be even more amazing than the last.
+                     May you continue to chase your dreams with unwavering passion, and may you always find happiness in the journey. Thank you for being you and for being my friend.<br><br>
+                    Happy birthday once again ❤️<br><br>
+                    <strong>SALAM QOWIYYAH WURAOLA, AJOKE</strong><br><br>
+                    With all my love and best wishes 🥰 
+                    <br><br>
+                    <strong>FROM SOFIA</strong>
+                    <br><br><br>
+<strong>I LOVE YOU SO MUCH</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
